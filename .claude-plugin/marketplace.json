@@ -1,0 +1,19 @@
+{
+  "name": "plaud-plugins",
+  "owner": {
+    "name": "Harsha"
+  },
+  "metadata": {
+    "description": "Claude Code plugin for Plaud AI recordings, transcripts, and MCP server",
+    "version": "0.4.0"
+  },
+  "plugins": [
+    {
+      "name": "plaud",
+      "source": ".",
+      "description": "Manage Plaud AI recordings via CLI commands and MCP tools. Includes 11 MCP tools, 4 prompts, 12 resources, 8 commands, 6 skills, and cost-safety hooks.",
+      "version": "0.4.0",
+      "keywords": ["plaud", "transcription", "audio", "elevenlabs", "recordings", "mcp", "memory", "semantic-search"]
+    }
+  ]
+}
