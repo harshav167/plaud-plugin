@@ -48,6 +48,8 @@ The server uses **GitHub OAuth** — no manual tokens or env vars needed. Claude
 ### Agent
 - **Aria** -- Recording assistant with cost awareness, dual-path search, and memory pipeline intelligence
 
+> **Known limitation:** The `agents` field in `plugin.json` is not supported when installing from a remote marketplace URL (Claude Code validates it as "Invalid input"). Aria's agent file (`agents/recording-assistant.md`) is present in the repo but is currently excluded from `plugin.json` to allow installation. To use Aria, copy `agents/recording-assistant.md` to `~/.claude/agents/` manually after installing.
+
 ### Commands (8)
 
 | Command | Description |
