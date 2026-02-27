@@ -10,7 +10,10 @@
   "plugins": [
     {
       "name": "plaud",
-      "source": ".",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/harshav167/plaud-plugin.git"
+      },
       "description": "Manage Plaud AI recordings via CLI commands and MCP tools. Includes 11 MCP tools, 4 prompts, 12 resources, 8 commands, 6 skills, and cost-safety hooks.",
       "version": "0.4.0",
       "keywords": ["plaud", "transcription", "audio", "elevenlabs", "recordings", "mcp", "memory", "semantic-search"]
