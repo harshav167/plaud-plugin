@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "./hooks/session-check.sh"
+            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/session-check.sh"
           }
         ]
       },
@@ -15,7 +15,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "./hooks/cost-safety.sh"
+            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/cost-safety.sh"
           }
         ]
       },
@@ -24,7 +24,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "./hooks/cost-safety.sh"
+            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/cost-safety.sh"
           }
         ]
       }
