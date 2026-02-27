@@ -1,0 +1,26 @@
+{
+  "name": "plaud",
+  "description": "Claude Code plugin for Plaud AI — manage recordings, transcripts, summaries, and audio via CLI commands, MCP tools, prompts, and skill resources",
+  "version": "0.4.0",
+  "author": {
+    "name": "Harsha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/harshav167/plaud-plugin"
+  },
+  "license": "MIT",
+  "keywords": ["plaud", "recordings", "transcription", "elevenlabs", "mcp", "audio", "meeting-notes", "memory", "semantic-search", "prompts", "elicitation"],
+  "capabilities": {
+    "tools": 11,
+    "prompts": 4,
+    "resources": 12,
+    "commands": 8,
+    "skills": 6
+  },
+  "skills": "./skills/",
+  "agents": "./agents/",
+  "commands": "./commands/",
+  "hooks": "./hooks/hooks.json",
+  "mcpServers": "./.mcp.json"
+}

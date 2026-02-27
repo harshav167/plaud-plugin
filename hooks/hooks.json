@@ -1,0 +1,62 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "mcp__plaud__find_recordings",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./hooks/session-check.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__plaud__transcribe",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./hooks/cost-safety.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__plaud__memory_ingest",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./hooks/cost-safety.sh"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "mcp__plaud__find_recordings",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "Tip: Run /status for a daily briefing of your recordings, memory index health, and untranscribed backlog."
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__plaud__transcribe",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "COST WARNING: Transcription uses ElevenLabs API credits. Cached transcripts return instantly at no cost. Use get_recording(file_ref) first to check if transcript_cached is true."
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__plaud__memory_ingest",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "COST WARNING: Ingestion with source='all' will transcribe ALL untranscribed recordings via ElevenLabs (costs credits). Use dry_run=true first to see the cost estimate, or source='cache' to only ingest already-cached transcripts (free)."
+          }
+        ]
+      }
+    ]
+  }
+}
