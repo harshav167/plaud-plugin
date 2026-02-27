@@ -9,6 +9,7 @@
   "license": "MIT",
   "keywords": ["plaud", "recordings", "transcription", "elevenlabs", "mcp", "audio", "meeting-notes", "memory", "semantic-search", "prompts", "elicitation"],
   "skills": "./skills/",
+  "agents": "./agents/",
   "commands": "./commands/",
   "hooks": "./hooks/hooks.json",
   "mcpServers": "./.mcp.json"
