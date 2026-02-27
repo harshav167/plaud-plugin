@@ -5,21 +5,10 @@
   "author": {
     "name": "Harsha"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/harshav167/plaud-plugin"
-  },
+  "repository": "https://github.com/harshav167/plaud-plugin",
   "license": "MIT",
   "keywords": ["plaud", "recordings", "transcription", "elevenlabs", "mcp", "audio", "meeting-notes", "memory", "semantic-search", "prompts", "elicitation"],
-  "capabilities": {
-    "tools": 11,
-    "prompts": 4,
-    "resources": 12,
-    "commands": 8,
-    "skills": 6
-  },
   "skills": "./skills/",
-  "agents": "./agents/",
   "commands": "./commands/",
   "hooks": "./hooks/hooks.json",
   "mcpServers": "./.mcp.json"
